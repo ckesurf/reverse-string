@@ -1,3 +1,13 @@
+/* 
+
+How to solve algos
+
+Rewrite in your own words, understand the problem
+Test cases
+Pseudocode
+
+*/
+
 function reverseString(str) {
   /*
     Example:
@@ -7,14 +17,20 @@ function reverseString(str) {
     a. Append each character to reversed_string.
     Return the reversed_string
   */
-  /*
-    Example:
-    change string into an array
-    split the array into individual letters
-    then loop from the last letter to the first letter
-    return each letter
-    change array back into an string
-  */
+  // Example:
+  // change string into an array
+  // split the array into individual letters
+  const array = str.split("");
+  let result = "";
+
+  // then loop from the last letter to the first letter
+  for (let i = array.length - 1; i >= 0; i--) {
+    // return each letter =>  append each character to a result
+    result += array[i];
+  }
+  // return the result
+  return result;
+
   /* 
     Example:
     Reverse a string
